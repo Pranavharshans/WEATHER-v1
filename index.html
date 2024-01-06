@@ -11,19 +11,19 @@
      <div class="card ">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-             <button><img src="search-2-line (1).png" >  </button>
+             <button><img src="search-2-line (1).png" alt="Search Icon"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
+            <img src="images/rain.png" class="weather-icon" alt="Weather Icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city"> Tiruppur</h2>
             <div class="details">
 
                 <div class="col">
-                    <img src="images/humidity.png">
+                    <img src="images/humidity.png" alt="Humidity Icon">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
@@ -31,17 +31,14 @@
                 </div>
 
                 <div class="col">
-                    <img src="images/wind.png">
+                    <img src="images/wind.png" alt="Wind Icon">
                     <div>
                         <p class="wind">15 Kmph</p>
                         <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
-
      </div>
      <script>
         const apiKey="eb72e813df088dc91cae052765ffe099"
@@ -87,22 +84,11 @@
                 
 
             }
-            
-
-
         }
 
         searchBtn.addEventListener("click", ()=>{
             checkWeather(searchBox.value);
-
-
-        }
-        )
-
-       
-        
-        
+        });
      </script>
-    
 </body>
 </html>
